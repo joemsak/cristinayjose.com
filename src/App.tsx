@@ -1,11 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import RsvpForm from "./components/RsvpForm"
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-    </div>
-  );
+const App = () => {
+  return <RsvpForm />
 }
 
-export default App;
+export default App

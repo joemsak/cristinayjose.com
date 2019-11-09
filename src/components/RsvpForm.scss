@@ -1,0 +1,55 @@
+label {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.field__note {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.field__error {
+  font-size: 0.9rem;
+  display: inline-block;
+  color: red;
+  padding: 0 0.5rem;
+  font-style: italic;
+}
+
+button {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: grey;
+  color: white;
+  outline: 0;
+  border: 2px solid black;
+
+  &:not(:disabled) {
+    transition: 0.2s background-color;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+    }
+  }
+}
+
+#name,
+#email,
+#street_address,
+#street_address2 {
+  width: 300px;
+}
+
+#how_many,
+#state {
+  width: 50px;
+}
+
+#postal_code,
+#country {
+  width: 65px;
+}
