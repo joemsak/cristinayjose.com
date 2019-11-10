@@ -18,38 +18,50 @@ label {
 
 button {
   display: block;
+  float: right;
   margin: 1rem 0;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  background: grey;
+  background: rgba(60, 179, 113, 1);
   color: white;
   outline: 0;
-  border: 2px solid black;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(60, 179, 113, 0.3);
 
   &:not(:disabled) {
     transition: 0.2s background-color;
     cursor: pointer;
 
-    &:hover {
-      background: black;
+    &:active {
+      transform: translate(0.1rem, 0.1rem);
+      box-shadow: none;
     }
+
+    &:hover {
+      background: rgba(60, 179, 113, 0.7);
+    }
+  }
+
+  &:disabled {
+    background: rgba(60, 179, 113, 0.5);
+    color: #444;
+    font-style: italic;
   }
 }
 
-#name,
-#email,
-#street_address,
-#street_address2 {
-  width: 300px;
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
 }
 
-#how_many,
-#state {
+#how_many {
   width: 50px;
 }
 
-#postal_code,
-#country {
-  width: 65px;
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 1rem;
 }

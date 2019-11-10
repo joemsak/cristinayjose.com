@@ -16,38 +16,42 @@ export default () => {
   }
 
   return (
-    <div className="App">
-      <Formik
-        initialValues={initialValues}
-        validationSchema={rsvpSchema}
-        onSubmit={onSubmit}
-      >
-        {({ isSubmitting }) => (
-          <Form>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={rsvpSchema}
+      onSubmit={onSubmit}
+    >
+      {({ isSubmitting }) => (
+        <Form>
+          <h1>Request an RSVP in the mail</h1>
+
+          <div className="input-group">
             <RsvpField name="name" label="Name" />
             <RsvpField name="email" label="Email" />
+          </div>
 
-            <RsvpField
-              name="how_many"
-              label="How many expected in your party?"
-            />
-            <div className="field__note">
-              (you will have a chance to change this)
-            </div>
+          <RsvpField
+            name="how_many"
+            label="How many expected in your party?"
+            note="you will have a chance to change this"
+          />
 
-            <RsvpField name="street_address" label="Street Address" />
-            <RsvpField name="street_address2" label="Street Address 2" />
+          <RsvpField name="street_address" label="Street Address" />
+          <RsvpField name="street_address2" label="Street Address 2" />
+
+          <div className="input-group">
             <RsvpField name="city" label="City" />
             <RsvpField name="state" label="State / Province" />
             <RsvpField name="postal_code" label="Postal Code" />
-            <RsvpField name="country" label="Country" />
+          </div>
 
-            <button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send"}
-            </button>
-          </Form>
-        )}
-      </Formik>
-    </div>
+          <RsvpField name="country" label="Country" />
+
+          <button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send"}
+          </button>
+        </Form>
+      )}
+    </Formik>
   )
 }

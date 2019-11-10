@@ -80,8 +80,28 @@ select {
 }
 
 body {
-  padding: 1rem;
+  padding: 1rem 5rem;
   font-family: "Roboto", sans-serif;
+}
+
+#root {
+  display: grid;
+  grid-template:
+    "head head head head"
+    "phot phot phot form"
+    "foot foot foot foot";
+}
+
+#announcement {
+  grid-area: head;
+}
+
+#photos {
+  grid-area: phot;
+}
+
+form {
+  grid-area: form;
 }
 
 label {
