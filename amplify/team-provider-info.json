@@ -1,0 +1,14 @@
+{
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cristinayjosecom-production-150012-authRole",
+            "UnauthRoleArn": "arn:aws:iam::507272121356:role/amplify-cristinayjosecom-production-150012-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::507272121356:role/amplify-cristinayjosecom-production-150012-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-cristinayjosecom-production-150012-deployment",
+            "UnauthRoleName": "amplify-cristinayjosecom-production-150012-unauthRole",
+            "StackName": "amplify-cristinayjosecom-production-150012",
+            "StackId": "arn:aws:cloudformation:us-east-1:507272121356:stack/amplify-cristinayjosecom-production-150012/ee972640-0333-11ea-8e5f-0e3e6f4b77b8"
+        }
+    }
+}
