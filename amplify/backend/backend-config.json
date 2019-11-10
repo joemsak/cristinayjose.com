@@ -4,5 +4,23 @@
 			"service": "S3AndCloudFront",
 			"providerPlugin": "awscloudformation"
 		}
+	},
+	"api": {
+		"cristinayjosecom": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "crisyjose-rsvp-std",
+							"apiKeyExpirationDays": "65"
+						}
+					}
+				}
+			}
+		}
 	}
 }

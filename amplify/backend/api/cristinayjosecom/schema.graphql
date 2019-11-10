@@ -1,0 +1,12 @@
+type Rsvp @model {
+  id: ID!
+  name: String!
+  email: String!
+  howMany: Int!
+  streetAddress: String!
+  streetAddress2: String
+  city: String!
+  state: String!
+  postalCode: Int!
+  country: String!
+}
