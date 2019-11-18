@@ -1,11 +1,11 @@
 export default {
   name: "",
   email: "",
-  how_many: 1,
-  street_address: "",
-  street_address2: "",
+  howMany: 1,
+  streetAddress: "",
+  streetAddress2: "",
   city: "",
   state: "",
-  postal_code: "",
+  postalCode: "",
   country: "",
 }

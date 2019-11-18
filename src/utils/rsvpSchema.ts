@@ -7,15 +7,15 @@ export default Yup.object().shape({
     .email("Invalid email")
     .required("Required"),
 
-  how_many: Yup.number()
+  howMany: Yup.number()
     .required("Required")
     .min(1),
 
-  street_address: Yup.string().required("Required"),
+  streetAddress: Yup.string().required("Required"),
 
   city: Yup.string().required("Required"),
 
-  postal_code: Yup.number().required("Required"),
+  postalCode: Yup.number().required("Required"),
 
   state: Yup.string()
     .required("Required")
