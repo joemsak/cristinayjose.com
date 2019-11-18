@@ -28,11 +28,6 @@ form {
 
   &.active {
     top: 20vh;
-
-    #form-open {
-      opacity: 0;
-      pointer-events: none;
-    }
   }
 }
 
@@ -57,8 +52,15 @@ form {
   transition: opacity 0.2s;
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
 
+  z-index: 99;
+
   &:hover {
     background: rgb(84, 209, 140);
+  }
+
+  &.form-active {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
@@ -69,6 +71,7 @@ form h1 {
   padding: 0 1rem;
   background: white;
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  z-index: 100;
 
   #form-close {
     text-decoration: none;
@@ -176,6 +179,13 @@ input {
 
   .input-group {
     grid-gap: 0.5rem;
+  }
+
+  #form-open {
+    font-size: 1rem;
+    padding: 0.7rem;
+    line-height: 1rem;
+    height: auto;
   }
 }
 
