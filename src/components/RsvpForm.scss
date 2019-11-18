@@ -17,8 +17,13 @@ form {
   height: 80vh;
   overflow: scroll;
 
-  li {
-    margin: 1rem 0;
+  ul {
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+    li {
+      margin: 1rem 0;
+    }
   }
 
   &.active {
@@ -156,4 +161,54 @@ input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-gap: 1rem;
+}
+
+@media screen and (max-width: 667px) {
+  form {
+    h1 {
+      font-size: 1.3rem;
+
+      #form-close {
+        top: 0.2rem;
+      }
+    }
+  }
+
+  .input-group {
+    grid-gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  form {
+    width: 95vw;
+    top: 100vh;
+    left: 47vw;
+    margin-left: -44vw;
+
+    ul {
+      font-size: 0.7rem;
+
+      li {
+        margin-left: 0;
+      }
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      height: 2rem;
+
+      #form-close {
+        top: 0.3rem;
+      }
+    }
+
+    label {
+      font-size: 0.7rem;
+    }
+
+    .field__note {
+      font-size: 0.7rem;
+    }
+  }
 }

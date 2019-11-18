@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react"
+import "./Announcement.scss"
 
 export default () => {
   const detailsEl = useRef(document.createElement("div"))
 
   useEffect(() => {
-    console.log(window.innerHeight - window.innerHeight * 0.1)
-    window.addEventListener("scroll", () => {
+    const revealDetails = () => {
       const windowHeight = window.innerHeight
       const heightLimit = windowHeight - windowHeight * 0.1
       const offsetTop = detailsEl.current.getBoundingClientRect().top
@@ -17,7 +17,10 @@ export default () => {
         detailsEl.current.style.maxHeight = "0"
         detailsEl.current.style.transition = "none"
       }
-    })
+    }
+
+    window.addEventListener("scroll", revealDetails)
+    revealDetails()
   })
 
   return (
