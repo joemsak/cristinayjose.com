@@ -36,13 +36,13 @@ export default () => {
         <h3 id="date">Saturday, November 28, 2020</h3>
 
         <h4>
-          in{" "}
+          in&nbsp;
           <a
-            href="https://duckduckgo.com/?q=Frente+al+Punto+Beach+Club&t=ffab&atb=v182-1&ia=web&iaxm=maps&strict_bbox=0&bbox=20.873562632881864%2C-105.43841092011411%2C20.870434896546094%2C-105.43398527523954&metatoken=0"
+            href="https://maraica.mx/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Sayulita, México
+            San Pancho, México
           </a>
         </h4>
       </div>

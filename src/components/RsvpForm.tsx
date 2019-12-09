@@ -60,19 +60,15 @@ export default () => {
 
             <ul>
               <li>
-                Please note this will be an <strong>adults-only</strong>{" "}
-                celebration.
+                <strong>Please do not book a hotel yet</strong>. We are blocking
+                out at least one hotel and we will give you all the information
+                you need with plenty of time to make plans.
               </li>
 
               <li>
-                <strong>Please do not book a hotel yet</strong>. We are thinking
-                of buying out a block and will include that information in the
-                RSVP mailing.
-              </li>
-
-              <li>
-                Go ahead and book your flight, though! The airport is Puerto
-                Vallarta, or, <strong>PRV</strong>
+                Go ahead and book your flight, though! The airport you should
+                fly to is Puerto Vallarta, or, <strong>PRV</strong>. We will be
+                providing transportation service.
               </li>
 
               <li>
@@ -82,22 +78,20 @@ export default () => {
                 </strong>
                 &nbsp;who are making such a huge commitment to celebrate with us
                 on our special day. We understand that some may wish to give a
-                gift in their absence; contributions toward our wedding and
-                honeymoon may be sent to&nbsp;
-                <a
-                  href="https://paypal.me/joemsak"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://paypal.me/joemsak
-                </a>
-                .
+                gift in their absence; please&nbsp;
+                <a href="mailto:joe@joesak.com">email Joe</a> if you wish to
+                contribute toward our wedding and honeymoon costs.
               </li>
               <li>
                 No matter how you choose to celebrate with us, either in person
                 or from afar, we seriously cannot thank you enough. We're going
                 to do everything we can to make it an easy, fun, and memorable
                 experience for our guests!
+              </li>
+
+              <li>
+                Venue space is limited, so we ask you to bring only one guest if
+                possible.
               </li>
             </ul>
 
