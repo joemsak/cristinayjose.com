@@ -1,13 +1,10 @@
-import React, { useState } from "react"
-import { Formik, Form, FormikValues } from "formik"
 import { API, graphqlOperation } from "aws-amplify"
+import { Form, Formik, FormikValues } from "formik"
+import React, { useState } from "react"
 import { createRsvp } from "../graphql/mutations"
-
-import RsvpField from "./RsvpField"
-
-import rsvpSchema from "../utils/rsvpSchema"
 import initialValues from "../utils/initialValues"
-
+import rsvpSchema from "../utils/rsvpSchema"
+import RsvpField from "./RsvpField"
 import "./RsvpForm.scss"
 
 export default () => {
@@ -41,21 +38,20 @@ export default () => {
     >
       {({ isSubmitting }) => (
         <>
-          <a
-            href="#"
+          <button
             className={isActive ? "form-active" : ""}
             id="form-open"
             onClick={() => setActive(true)}
           >
             Request an RSVP
-          </a>
+          </button>
 
           <Form className={isActive ? "active" : ""}>
             <h1>
               Receive an RSVP in the mail
-              <a href="#" id="form-close" onClick={() => setActive(false)}>
+              <button id="form-close" onClick={() => setActive(false)}>
                 &times;
-              </a>
+              </button>
             </h1>
 
             <ul>

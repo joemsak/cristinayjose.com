@@ -74,18 +74,17 @@ form h1 {
   z-index: 100;
 
   #form-close {
-    text-decoration: none;
-    display: block;
-    color: #333;
     background: none;
     box-shadow: none;
-    position: absolute;
-    top: 13px;
-    right: 13px;
+    color: #333;
+    cursor: pointer;
+    display: block;
     font-size: 3rem;
     font-weight: bold;
-    cursor: pointer;
     line-height: 1rem;
+    position: absolute;
+    right: 0;
+    top: -10px;
 
     transition: opacity 0.2s;
 
