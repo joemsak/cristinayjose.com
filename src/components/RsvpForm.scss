@@ -6,7 +6,7 @@
   border-top-right-radius: 0.3rem;
 
   position: fixed;
-  top: 100vh;
+  top: 20vh;
   left: 70vw;
   width: 70vw;
   margin-left: -55vw;
@@ -54,8 +54,8 @@
     }
   }
 
-  &.active {
-    top: 20vh;
+  &.hidden {
+    top: 100vh;
   }
 }
 

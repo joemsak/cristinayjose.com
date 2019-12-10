@@ -46,7 +46,7 @@ export default () => {
             Request an RSVP
           </button>
 
-          <div className={isActive ? "active" : ""} id="rsvp-form">
+          <div className={isActive ? "active" : "hidden"} id="rsvp-form">
             <header>
               <h1>
                 Receive an RSVP in the mail
