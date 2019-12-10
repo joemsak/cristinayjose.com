@@ -79,8 +79,15 @@ export default () => {
                 &nbsp;who are making such a huge commitment to celebrate with us
                 on our special day. We understand that some may wish to give a
                 gift in their absence; please&nbsp;
-                <a href="mailto:joe@joesak.com">email Joe</a> if you wish to
-                contribute toward our wedding and honeymoon costs.
+                <a
+                  href="mailto:joe@joesak.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  email Joe
+                </a>{" "}
+                if you wish to contribute toward our wedding and honeymoon
+                costs.
               </li>
               <li>
                 Venue space is limited, so please keep your party to two as is
