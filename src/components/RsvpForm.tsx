@@ -83,15 +83,14 @@ export default () => {
                 contribute toward our wedding and honeymoon costs.
               </li>
               <li>
+                Venue space is limited, so please keep your party to two as is
+                possible.
+              </li>
+              <li>
                 No matter how you choose to celebrate with us, either in person
                 or from afar, we seriously cannot thank you enough. We're going
                 to do everything we can to make it an easy, fun, and memorable
                 experience for our guests!
-              </li>
-
-              <li>
-                Venue space is limited, so we ask you to bring only one guest if
-                possible.
               </li>
             </ul>
 
