@@ -25,7 +25,7 @@ body {
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
   header h1 {
-    padding: 0 1rem;
+    padding: 0 2rem;
     box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     z-index: 100;
 
@@ -174,15 +174,16 @@ input {
 }
 
 @media screen and (max-width: 667px) {
-  form {
-    h1 {
-      font-size: 1.3rem;
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
 
-      #form-close {
-        top: 0.2rem;
-      }
+    #form-close {
+      top: 0.3rem;
     }
+  }
 
+  form {
     .input-group {
       display: block;
     }
@@ -209,15 +210,6 @@ input {
 
       li {
         margin-left: 0;
-      }
-    }
-
-    h1 {
-      font-size: 1.2rem;
-      height: 2rem;
-
-      #form-close {
-        top: 0.3rem;
       }
     }
 
