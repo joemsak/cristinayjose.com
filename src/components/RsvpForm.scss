@@ -10,12 +10,18 @@ body {
   border-top-right-radius: 0.3rem;
 
   position: fixed;
-  top: 20vh;
+  height: 75vh;
   left: 70vw;
   width: 70vw;
+  bottom: 0;
   margin-left: -55vw;
+  max-height: 80vh;
 
-  transition: top 1s;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  transition: bottom 1s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
   header h1 {
@@ -45,8 +51,8 @@ body {
   }
 
   form {
-    height: 75vh;
-    overflow: scroll;
+    min-height: 1em;
+    overflow-y: scroll;
   }
 
   ul {
@@ -59,7 +65,7 @@ body {
   }
 
   &.hidden {
-    top: 100vh;
+    bottom: -100vh;
   }
 }
 
@@ -192,7 +198,6 @@ input {
 
 @media screen and (max-width: 414px) {
   form {
-    top: 100vh;
     left: 47vw;
 
     ul {
