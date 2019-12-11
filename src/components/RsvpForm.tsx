@@ -83,6 +83,13 @@ export default () => {
                 </li>
 
                 <li>
+                  We will be there at least during the dates of Thursday, Nov 26
+                  (Thanksgiving) through Sunday Nov 29. We may extend our plans
+                  depending on how many folks choose to make a vacation out of
+                  it.
+                </li>
+
+                <li>
                   <strong>
                     We are not asking for gifts, <em>especially</em> from our
                     guests
