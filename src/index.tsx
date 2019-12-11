@@ -6,6 +6,9 @@ import * as serviceWorker from "./serviceWorker"
 
 import Amplify from "aws-amplify"
 import awsconfig from "./aws-exports"
+
+import "./config/i18n"
+
 Amplify.configure(awsconfig)
 
 ReactDOM.render(<App />, document.getElementById("root"))

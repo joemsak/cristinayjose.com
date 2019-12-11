@@ -1,0 +1,20 @@
+{
+  "announcement": {
+    "save_the_date": "Annunciar de le Fecha",
+    "will_be_married_on": "van a casar en"
+  },
+  "days": {
+    "saturday": "Sábado"
+  },
+  "dict": {
+    "change_to": "Cambie á",
+    "in": "en"
+  },
+  "locales": {
+    "en-US": "🇺🇸 EN",
+    "es-MX": "🇲🇽 ES"
+  },
+  "months": {
+    "november": "Noviembre"
+  }
+}

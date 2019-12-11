@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from "react"
+import { useTranslation } from "react-i18next"
+
 import "./Announcement.scss"
 
 export default () => {
   const detailsEl = useRef(document.createElement("div"))
+  const { t } = useTranslation()
 
   useEffect(() => {
     const revealDetails = () => {
@@ -26,17 +29,19 @@ export default () => {
   return (
     <header id="announcement">
       <div id="script">
-        <h1>Save the Date!</h1>
+        <h1>{t("announcement.save_the_date")}!</h1>
         <h2>Cristina García &amp; Joseph Sak</h2>
       </div>
 
       <div id="details" ref={detailsEl}>
-        <h3>will be married on</h3>
+        <h3>{t("announcement.will_be_married_on")}</h3>
 
-        <h3 id="date">Saturday, November 28, 2020</h3>
+        <h3 id="date">
+          {t("days.saturday")}, {t("months.november")} 28, 2020
+        </h3>
 
         <h4>
-          in&nbsp;
+          {t("dict.in")}&nbsp;
           <a
             href="https://maraica.mx/"
             target="_blank"

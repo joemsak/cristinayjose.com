@@ -1,0 +1,33 @@
+#language-switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  font-size: 0.9rem;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      height: 100%;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin: 0 0 0.5rem;
+      }
+
+      button {
+        background: none;
+        color: black;
+        box-shadow: none;
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+      }
+    }
+  }
+}
