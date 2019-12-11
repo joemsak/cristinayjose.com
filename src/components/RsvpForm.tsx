@@ -104,8 +104,8 @@ export default () => {
                   >
                     email Joe
                   </a>{" "}
-                  if you wish to contribute toward our wedding and honeymoon
-                  costs.
+                  if you'd like to contribute a gift toward our wedding and
+                  honeymoon costs.
                 </li>
                 <li>
                   Venue space is limited, so please keep your party to two as is
