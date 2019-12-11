@@ -101,9 +101,15 @@ label {
   cursor: pointer;
 }
 
-.thank-you {
+.thank-you,
+.error {
   text-align: right;
   margin: 1rem 0;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
 }
 
 p {

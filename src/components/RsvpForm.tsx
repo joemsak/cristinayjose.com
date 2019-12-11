@@ -9,23 +9,33 @@ import "./RsvpForm.scss"
 
 export default () => {
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState(false)
   const [isActive, setActive] = useState(false)
 
   const onSubmit = async (values: FormikValues) => {
-    await API.graphql(graphqlOperation(createRsvp, { input: values }))
+    try {
+      await API.graphql(graphqlOperation(createRsvp, { input: values }))
+    } catch (e) {
+      setError(true)
+    }
+
     setSubmitted(true)
   }
 
   const renderButton = (isSubmitting: boolean) => {
-    if (!submitted) {
+    if (!submitted && !error) {
       return (
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send"}
         </button>
       )
-    } else {
+    } else if (!error) {
       return (
         <p className="thank-you">Got it! You're all set for now. Thank you!</p>
+      )
+    } else {
+      return (
+        <p className="error">Shoot, there was an error. Please let Joe know!</p>
       )
     }
   }
