@@ -1,10 +1,8 @@
 {
   "announcement": {
     "save_the_date": "Save the Date",
-    "will_be_married_on": "will be married on"
-  },
-  "days": {
-    "saturday": "Saturday"
+    "will_be_married_on": "will be married on",
+    "date": "Saturday, November 28"
   },
   "dict": {
     "change_to": "Change to",
@@ -13,8 +11,5 @@
   "locales": {
     "en-US": "🇺🇸 EN",
     "es-MX": "🇲🇽 ES"
-  },
-  "months": {
-    "november": "November"
   }
 }

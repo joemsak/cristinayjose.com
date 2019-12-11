@@ -36,9 +36,7 @@ export default () => {
       <div id="details" ref={detailsEl}>
         <h3>{t("announcement.will_be_married_on")}</h3>
 
-        <h3 id="date">
-          {t("days.saturday")}, {t("months.november")} 28, 2020
-        </h3>
+        <h3 id="date">{t("announcement.date")}, 2020</h3>
 
         <h4>
           {t("dict.in")}&nbsp;
