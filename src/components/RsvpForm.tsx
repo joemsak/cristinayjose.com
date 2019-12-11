@@ -14,11 +14,13 @@ export default () => {
 
   const onSubmit = async (values: FormikValues) => {
     try {
+      if (values.streetAddress2 == "") values.streetAddress2 = null
       await API.graphql(graphqlOperation(createRsvp, { input: values }))
     } catch (e) {
       setError(true)
     }
 
+    if (values.streetAddress2 == null) values.streetAddress2 = ""
     setSubmitted(true)
   }
 
