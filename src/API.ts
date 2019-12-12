@@ -10,7 +10,7 @@ export type CreateRsvpInput = {
   streetAddress2?: string | null,
   city: string,
   state: string,
-  postalCode: number,
+  postalCode: string,
   country: string,
 };
 
@@ -23,7 +23,7 @@ export type UpdateRsvpInput = {
   streetAddress2?: string | null,
   city?: string | null,
   state?: string | null,
-  postalCode?: number | null,
+  postalCode?: string | null,
   country?: string | null,
 };
 
@@ -40,7 +40,7 @@ export type ModelRsvpFilterInput = {
   streetAddress2?: ModelStringFilterInput | null,
   city?: ModelStringFilterInput | null,
   state?: ModelStringFilterInput | null,
-  postalCode?: ModelIntFilterInput | null,
+  postalCode?: ModelStringFilterInput | null,
   country?: ModelStringFilterInput | null,
   and?: Array< ModelRsvpFilterInput | null > | null,
   or?: Array< ModelRsvpFilterInput | null > | null,
@@ -100,7 +100,7 @@ export type CreateRsvpMutation = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
@@ -120,7 +120,7 @@ export type UpdateRsvpMutation = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
@@ -140,7 +140,7 @@ export type DeleteRsvpMutation = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
@@ -160,7 +160,7 @@ export type GetRsvpQuery = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
@@ -184,7 +184,7 @@ export type ListRsvpsQuery = {
       streetAddress2: string | null,
       city: string,
       state: string,
-      postalCode: number,
+      postalCode: string,
       country: string,
     } | null > | null,
     nextToken: string | null,
@@ -202,7 +202,7 @@ export type OnCreateRsvpSubscription = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
@@ -218,7 +218,7 @@ export type OnUpdateRsvpSubscription = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
@@ -234,7 +234,7 @@ export type OnDeleteRsvpSubscription = {
     streetAddress2: string | null,
     city: string,
     state: string,
-    postalCode: number,
+    postalCode: string,
     country: string,
   } | null,
 };
