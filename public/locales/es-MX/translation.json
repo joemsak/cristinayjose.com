@@ -1,12 +1,48 @@
 {
   "announcement": {
-    "save_the_date": "Anunciando la Fecha",
-    "will_be_married_on": "se van a casar el",
-    "date": "Sábado, 28 Noviembre"
+    "save_the_date": "Reserva la Fecha",
+    "will_be_married_on": "se casan el",
+    "date": "Sábado, Noviembre 28"
   },
   "dict": {
-    "change_to": "Cambiar a",
-    "in": "en"
+    "change_to": "Change to",
+    "especially": "especialmente",
+    "in": "en",
+    "invalid_email": "Invalid email",
+    "required": "Required"
+  },
+  "form": {
+    "city": "Ciudad",
+    "country": "País",
+    "email": "Email",
+    "error": "Ups, hubo un error. Por favor hazlo saber a Joe ó Cristina!",
+    "heading": "Recibe una invitación en el correo",
+    "how_many": "Cuantos invitados a tu nombre?",
+    "how_many_note": "habrá oportunidad de modificar",
+    "name": "Nombre Completo",
+    "postal_code": "Código Postal",
+    "request_btn": "Pedir invitación",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "state": "Estado",
+    "street_address": "Calle con numero exterior e interior (si lo hay)",
+    "street_address_2": "Colonia",
+    "thank_you": "Listo! Es todo por ahora. Gracias!"
+  },
+  "info": {
+    "flight": "Para los que vendrán en avión, ya pueden irlo reservando! El aeropuerto al que volarás es el de Puerto Vallarta,",
+    "gifts_email": "cristinagarcia.arq@gmail.com",
+    "gifts_email_text": "envía un email a Cristina",
+    "gifts_intro": "que harán un gran esfuerzo por celebrar con nosotros este día tan especial. Entendemos que algunos no podrán acompañarnos y desean hacernos una contribución, por favor",
+    "gifts_intro_strong": "No estamos pidiendo regalos",
+    "gifts_outro": "si quieres hacer una contribución para nuestra boda ó luna de miel.",
+    "gifts_outro_strong": "de nuestros invitados",
+    "gratitude": "No importa como decidas celebrar con nosotros, ya sea en persona ó en espíritu, no podemos más que agradecértelo infinitamente. Vamos a hacer todo lo que esté en nuestras manos por que esta sea una experiencia relajada, divertida y memorable para nuestros invitados!",
+    "hotel": "Tendremos un hotel específico con la fecha bloqueada para el evento. Te daremos toda la información con suficiente tiempo para que puedas planear tu estadía, si es que te interesa reservar en ese lugar.",
+    "hotel_strong": "Por favor no reserves aún tu hotel",
+    "join_us": "Esteremos ahí por lo menos desde el Jueves 26 de Noviembre (Día de Gracias) hasta el Domingo 29 de Noviembre. Tal vez extendamos nuestra estadía, dependiendo de cuántos invitados decidan alargar la suya y aprovechar para hacer de este especial evento unas vacaciones.",
+    "transportation": "Proveeremos servicio de transporte del aeropuerto a San Pancho y viceversa.",
+    "venue_space": "El espacio para el evento es limitado, por lo tanto agradecemos de antemano que, dentro de lo posible solo se añada un invitado más a tu nombre."
   },
   "locales": {
     "en-US": "🇺🇸 EN",

@@ -1,26 +1,26 @@
 import * as Yup from "yup"
 
 export default Yup.object().shape({
-  name: Yup.string().required("Required"),
+  name: Yup.string().required(),
 
   email: Yup.string()
     .email("Invalid email")
-    .required("Required"),
+    .required(),
 
   howMany: Yup.number()
-    .required("Required")
+    .required()
     .min(1),
 
-  streetAddress: Yup.string().required("Required"),
+  streetAddress: Yup.string().required(),
 
-  city: Yup.string().required("Required"),
+  city: Yup.string().required(),
 
-  postalCode: Yup.number().required("Required"),
+  postalCode: Yup.number().required(),
 
   state: Yup.string()
-    .required("Required")
+    .required()
     .min(2)
     .max(3),
 
-  country: Yup.string().required("Required"),
+  country: Yup.string().required(),
 })

@@ -5,8 +5,44 @@
     "date": "Saturday, November 28"
   },
   "dict": {
-    "change_to": "Change to",
-    "in": "in"
+    "change_to": "Cambiar a",
+    "especially": "especially",
+    "in": "in",
+    "invalid_email": "Invalid email",
+    "required": "Required"
+  },
+  "form": {
+    "city": "City",
+    "country": "Country",
+    "email": "Email",
+    "error": "Shoot, there was an error. Please let Joe know!",
+    "heading": "Receive an RSVP in the mail",
+    "how_many": "How many expected in your party?",
+    "how_many_note": "you will have a chance to change this",
+    "name": "Full Name",
+    "postal_code": "Zip Code",
+    "request_btn": "Request an RSVP",
+    "send": "Send",
+    "sending": "Sending...",
+    "state": "State / Province",
+    "street_address": "Street Address",
+    "street_address_2": "Street Address 2",
+    "thank_you": "Got it! You're all set for now. Thank you!"
+  },
+  "info": {
+    "flight": "Go ahead and book your flight, though! The airport you should fly to is Puerto Vallarta, or,",
+    "gifts_email": "joe@joesak.com",
+    "gifts_email_text": "email Joe",
+    "gifts_intro": "who are making such a huge commitment to celebrate with us on our special day. We understand that some may wish to give a gift in their absence; please",
+    "gifts_intro_strong": "We are not asking for gifts",
+    "gifts_outro": "if you'd like to contribute a gift toward our wedding and honeymoon costs.",
+    "gifts_outro_strong": "from our guests",
+    "gratitude": "No matter how you choose to celebrate with us, either in person or from afar, we seriously cannot thank you enough. We're going to do everything we can to make it an easy, fun, and memorable experience for our guests!",
+    "hotel": "We are blocking out at least one hotel and we will give you all the information you need with plenty of time to make plans.",
+    "hotel_strong": "Please do not book a hotel yet",
+    "join_us": "We will be there at least during the dates of Thursday, Nov 26 (Thanksgiving) through Sunday Nov 29. We may extend our plans depending on how many folks choose to make a vacation out of it.",
+    "transportation": "We will be providing transportation service to and from the airport.",
+    "venue_space": "Venue space is limited, so please keep your party to two as is possible."
   },
   "locales": {
     "en-US": "🇺🇸 EN",

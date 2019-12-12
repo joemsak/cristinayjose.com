@@ -1,16 +1,20 @@
 import { API, graphqlOperation } from "aws-amplify"
 import { Form, Formik, FormikValues } from "formik"
 import React, { useState } from "react"
+import { useTranslation } from "react-i18next"
+
 import { createRsvp } from "../graphql/mutations"
 import initialValues from "../utils/initialValues"
 import rsvpSchema from "../utils/rsvpSchema"
 import RsvpField from "./RsvpField"
+
 import "./RsvpForm.scss"
 
 export default () => {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState(false)
   const [isActive, setActive] = useState(false)
+  const { t } = useTranslation()
 
   const onSubmit = async (values: FormikValues) => {
     try {
@@ -28,17 +32,13 @@ export default () => {
     if (!submitted && !error) {
       return (
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Send"}
+          {isSubmitting ? t("form.sending") : t("form.send")}
         </button>
       )
     } else if (!error) {
-      return (
-        <p className="thank-you">Got it! You're all set for now. Thank you!</p>
-      )
+      return <p className="thank-you">{t("form.thank_you")}</p>
     } else {
-      return (
-        <p className="error">Shoot, there was an error. Please let Joe know!</p>
-      )
+      return <p className="error">{t("form.error")}</p>
     }
   }
 
@@ -47,6 +47,7 @@ export default () => {
       initialValues={initialValues}
       validationSchema={rsvpSchema}
       onSubmit={onSubmit}
+      autocomplete="on"
     >
       {({ isSubmitting }) => (
         <>
@@ -55,13 +56,13 @@ export default () => {
             id="form-open"
             onClick={() => setActive(true)}
           >
-            Request an RSVP
+            {t("form.request_btn")}
           </button>
 
           <div className={isActive ? "active" : "hidden"} id="rsvp-form">
             <header>
               <h1>
-                Receive an RSVP in the mail
+                {t("form.heading")}
                 <button id="form-close" onClick={() => setActive(false)}>
                   &times;
                 </button>
@@ -71,76 +72,82 @@ export default () => {
             <Form>
               <ul>
                 <li>
-                  <strong>Please do not book a hotel yet</strong>. We are
-                  blocking out at least one hotel and we will give you all the
-                  information you need with plenty of time to make plans.
+                  <strong>{t("info.hotel_strong")}</strong>. {t("info.hotel")}
                 </li>
 
                 <li>
-                  Go ahead and book your flight, though! The airport you should
-                  fly to is Puerto Vallarta, or, <strong>PRV</strong>. We will
-                  be providing transportation service.
+                  {t("info.flight")} <strong>PRV</strong>.&nbsp;
+                  {t("info.transportation")}
                 </li>
 
-                <li>
-                  We will be there at least during the dates of Thursday, Nov 26
-                  (Thanksgiving) through Sunday Nov 29. We may extend our plans
-                  depending on how many folks choose to make a vacation out of
-                  it.
-                </li>
+                <li>{t("info.join_us")}</li>
 
                 <li>
                   <strong>
-                    We are not asking for gifts, <em>especially</em> from our
-                    guests
+                    {t("info.gifts_intro_strong")},&nbsp;
+                    <em>{t("dict.especially")}</em>&nbsp;
+                    {t("info.gifts_outro_strong")}
                   </strong>
-                  &nbsp;who are making such a huge commitment to celebrate with
-                  us on our special day. We understand that some may wish to
-                  give a gift in their absence; please&nbsp;
+                  &nbsp;{t("info.gifts_intro")}&nbsp;
                   <a
-                    href="mailto:joe@joesak.com"
+                    href={`mailto:${t("info.gifts_email")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    email Joe
-                  </a>{" "}
-                  if you'd like to contribute a gift toward our wedding and
-                  honeymoon costs.
+                    {t("info.gifts_email_text")}
+                  </a>
+                  &nbsp;
+                  {t("info.gifts_outro")}
                 </li>
-                <li>
-                  Venue space is limited, so please keep your party to two as is
-                  possible.
-                </li>
-                <li>
-                  No matter how you choose to celebrate with us, either in
-                  person or from afar, we seriously cannot thank you enough.
-                  We're going to do everything we can to make it an easy, fun,
-                  and memorable experience for our guests!
-                </li>
+                <li>{t("info.venue_space")}</li>
+                <li>{t("info.gratitude")}</li>
               </ul>
 
               <div className="form">
                 <div className="input-group">
-                  <RsvpField name="name" label="Name" />
-                  <RsvpField name="email" label="Email" />
+                  <RsvpField name="name" label={t("form.name")} />
+                  <RsvpField name="email" label={t("form.email")} />
                 </div>
 
                 <RsvpField
                   name="howMany"
-                  label="How many expected in your party?"
-                  note="you will have a chance to change this"
+                  label={t("form.how_many")}
+                  note={t("form.how_many_note")}
                 />
 
-                <RsvpField name="streetAddress" label="Street Address" />
-                <RsvpField name="streetAddress2" label="Street Address 2" />
+                <RsvpField
+                  name="streetAddress"
+                  autocomplete="street-address"
+                  label={t("form.street_address")}
+                />
+
+                <RsvpField
+                  name="streetAddress2"
+                  autocomplete="street-address-2"
+                  label={t("form.street_address_2")}
+                />
 
                 <div className="input-group">
-                  <RsvpField name="city" label="City" />
-                  <RsvpField name="state" label="State / Province" />
-                  <RsvpField name="postalCode" label="Postal Code" />
+                  <RsvpField
+                    name="city"
+                    label={t("form.city")}
+                    autocomplete="locality"
+                  />
+
+                  <RsvpField
+                    name="state"
+                    label={t("form.state")}
+                    autocomplete="region"
+                  />
+
+                  <RsvpField
+                    name="postalCode"
+                    label={t("form.postal_code")}
+                    autocomplete="postal-code"
+                  />
                 </div>
 
-                <RsvpField name="country" label="Country" />
+                <RsvpField name="country" label={t("form.country")} />
 
                 {renderButton(isSubmitting)}
               </div>
