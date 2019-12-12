@@ -7,6 +7,6 @@ type Rsvp @model {
   streetAddress2: String
   city: String!
   state: String!
-  postalCode: Int!
+  postalCode: String!
   country: String!
 }
