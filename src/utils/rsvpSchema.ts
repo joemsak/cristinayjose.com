@@ -15,7 +15,7 @@ export default Yup.object().shape({
 
   city: Yup.string().required(),
 
-  postalCode: Yup.number().required(),
+  postalCode: Yup.string().required(),
 
   state: Yup.string()
     .required()
