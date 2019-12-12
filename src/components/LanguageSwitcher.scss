@@ -1,6 +1,5 @@
 #language-switcher {
-  position: absolute;
-  top: 1rem;
+  position: fixed;
   right: 1rem;
   z-index: 999;
   font-size: 0.9rem;
@@ -22,12 +21,25 @@
       }
 
       button {
-        background: none;
+        background: white;
         color: black;
         box-shadow: none;
         font-size: 1rem;
         padding: 0.25rem 0.5rem;
       }
     }
+  }
+}
+
+@media screen and (min-width: 415px) {
+  #language-switcher {
+    top: 1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #language-switcher {
+    bottom: 0;
+    padding: 0;
   }
 }
