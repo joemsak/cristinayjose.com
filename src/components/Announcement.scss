@@ -110,3 +110,11 @@ h4 {
     }
   }
 }
+
+@media screen and (device-aspect-ratio: 40/71) {
+  #script {
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+}

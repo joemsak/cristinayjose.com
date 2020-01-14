@@ -9,19 +9,19 @@ const LanguageSwitcher: React.FC = () => {
   const { t, i18n } = useTranslation()
 
   const switchLanguage = useCallback(
-    (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-      const lang = (event.target as HTMLButtonElement).dataset.lang
+    () => {
+      const lang = LANGS.filter(l => i18n.language !== l)[0]
       window.location.search = `lng=${lang}`
     },
     []
   )
 
   const renderAvailableLocales = () => {
-    return LANGS.filter((lang) => i18n.language !== lang).map((lang) => {
+    return LANGS.filter((lang) => i18n.language === lang).map((lang) => {
       return (
         <li key={lang}>
-          <button type="button" data-lang={lang} onClick={switchLanguage}>
-            {t("dict.change_to")}: {t(`locales.${lang}`)}
+          <button type="button" onClick={switchLanguage}>
+            {t(`locales.${lang}`)}
           </button>
         </li>
       )

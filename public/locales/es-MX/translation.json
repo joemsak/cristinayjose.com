@@ -5,7 +5,6 @@
     "date": "Sábado, 28 Noviembre"
   },
   "dict": {
-    "change_to": "Change to",
     "especially": "especialmente",
     "in": "en",
     "invalid_email": "Invalid email",
@@ -17,7 +16,7 @@
     "email": "Email",
     "error": "Ups, hubo un error. Por favor hazlo saber a Joe ó Cristina!",
     "heading": "Recibe una invitación en el correo",
-    "how_many": "Cuantos invitados a tu nombre?",
+    "how_many": "Incluyéndote, cuántos invitados a tu nombre?",
     "how_many_note": "habrá oportunidad de modificar",
     "name": "Nombre Completo",
     "postal_code": "Código Postal",
@@ -25,7 +24,7 @@
     "send": "Enviar",
     "sending": "Enviando...",
     "state": "Estado",
-    "street_address": "Calle con numero exterior e interior (si lo hay)",
+    "street_address": "Calle con número exterior e interior (si lo hay)",
     "street_address_2": "Colonia",
     "thank_you": "Listo! Es todo por ahora. Gracias!"
   },
@@ -41,6 +40,7 @@
     "hotel": "Tendremos un hotel específico con la fecha bloqueada para el evento. Te daremos toda la información con suficiente tiempo para que puedas planear tu estadía, si es que te interesa reservar en ese lugar.",
     "hotel_strong": "Por favor no reserves aún tu hotel",
     "join_us": "Esteremos ahí por lo menos desde el Jueves 26 de Noviembre (Día de Gracias) hasta el Domingo 29 de Noviembre. Tal vez extendamos nuestra estadía, dependiendo de cuántos invitados decidan alargar la suya y aprovechar para hacer de este especial evento unas vacaciones.",
+    "more_btn": "Más información",
     "transportation": "Proveeremos servicio de transporte del aeropuerto a San Pancho y viceversa.",
     "venue_space": "El espacio para el evento es limitado, por lo tanto agradecemos de antemano que, dentro de lo posible solo se añada un invitado más a tu nombre."
   },

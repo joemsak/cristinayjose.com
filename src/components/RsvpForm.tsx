@@ -18,13 +18,13 @@ export default () => {
 
   const onSubmit = async (values: FormikValues) => {
     try {
-      if (values.streetAddress2 == "") values.streetAddress2 = null
+      if (values.streetAddress2 === "") values.streetAddress2 = null
       await API.graphql(graphqlOperation(createRsvp, { input: values }))
     } catch (e) {
       setError(true)
     }
 
-    if (values.streetAddress2 == null) values.streetAddress2 = ""
+    if (values.streetAddress2 === null) values.streetAddress2 = ""
     setSubmitted(true)
   }
 
@@ -70,39 +70,6 @@ export default () => {
             </header>
 
             <Form>
-              <ul>
-                <li>
-                  <strong>{t("info.hotel_strong")}</strong>. {t("info.hotel")}
-                </li>
-
-                <li>
-                  {t("info.flight")} <strong>PRV</strong>.&nbsp;
-                  {t("info.transportation")}
-                </li>
-
-                <li>{t("info.join_us")}</li>
-
-                <li>
-                  <strong>
-                    {t("info.gifts_intro_strong")},&nbsp;
-                    <em>{t("dict.especially")}</em>&nbsp;
-                    {t("info.gifts_outro_strong")}
-                  </strong>
-                  &nbsp;{t("info.gifts_intro")}&nbsp;
-                  <a
-                    href={`mailto:${t("info.gifts_email")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("info.gifts_email_text")}
-                  </a>
-                  &nbsp;
-                  {t("info.gifts_outro")}
-                </li>
-                <li>{t("info.venue_space")}</li>
-                <li>{t("info.gratitude")}</li>
-              </ul>
-
               <div className="form">
                 <div className="input-group">
                   <RsvpField name="name" label={t("form.name")} />

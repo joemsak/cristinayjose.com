@@ -56,15 +56,6 @@ body {
     overflow-y: scroll;
   }
 
-  ul {
-    margin: 0;
-    padding: 0 1rem;
-    list-style: none;
-    li {
-      margin: 1rem 0;
-    }
-  }
-
   &.hidden {
     bottom: -100vh;
   }
@@ -84,9 +75,7 @@ body {
 
   position: fixed;
   bottom: 0;
-  left: 10px;
-
-  height: 50px;
+  right: 10px;
 
   transition: opacity 0.2s;
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
@@ -204,14 +193,6 @@ input {
 @media screen and (max-width: 414px) {
   form {
     left: 47vw;
-
-    ul {
-      font-size: 0.7rem;
-
-      li {
-        margin-left: 0;
-      }
-    }
 
     label {
       font-size: 0.7rem;
